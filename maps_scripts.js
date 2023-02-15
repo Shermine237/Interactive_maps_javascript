@@ -1,3 +1,14 @@
+// utilities
+
+let detailVillage = (village, chef, id) => 
+`
+    <h4>${village}</h4>\
+    <ul>\
+        <li>Chef du village: ${chef}</li>\
+        <li><a href='http://batoufan.go.yo.fr/plan?id=${id}'>Plan du quartier</a></li>\
+    </ul>
+`;
+
 // script file
 
 let myMap = L.map("map").setView([5.2562112, 10.4663811], 14);
@@ -10,109 +21,49 @@ L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}',{
 
 
 let DEPTSE = L.marker([5.279164, 10.449039], {title: "Village DEPTSE"}).addTo(myMap);
-    DEPTSE.bindPopup("<h4>Village DEPTSE</h4>\
-                        <ul>\
-                            <li>Chef du village: NOM-DU-CHEF</li>\
-                            <li><a href='#'>Plan du quartier</a></li>\
-                        </ul>");
+    DEPTSE.bindPopup(detailVillage("Village DEPTSE", "Nom du chef", "1"));
 
 let DJIMGANG = L.marker([5.275403, 10.456850], {title: "Village DJIMGANG"}).addTo(myMap);
-    DJIMGANG.bindPopup("<h4>Village DJIMGANG</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    DJIMGANG.bindPopup(detailVillage("Village DJIMGANG", "Nom du chef", "2"));
 
 let FAMLA = L.marker([5.277455, 10.464145], {title: "Village FAMLA"}).addTo(myMap);
-    FAMLA.bindPopup("<h4>Village FAMLA</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    FAMLA.bindPopup(detailVillage("Village FAMLA", "Nom du chef", "3"));
 
 let FIEUTCHIP = L.marker([5.273010, 10.484402], {title: "Village FIEUTCHIP"}).addTo(myMap);
-    FIEUTCHIP.bindPopup("<h4>Village FIEUTCHIP</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    FIEUTCHIP.bindPopup(detailVillage("Village FIEUTCHIP", "Nom du chef", "4"));
 
 let KAMKIEU = L.marker([5.260874, 10.458738], {title: "Village KAMKIEU"}).addTo(myMap);
-    KAMKIEU.bindPopup("<h4>Village KAMKIEU</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    KAMKIEU.bindPopup(detailVillage("Village KAMKIEU", "Nom du chef", "5"));
 
 let KASSE = L.marker([5.254122, 10.440714], {title: "Village KASSE"}).addTo(myMap);
-    KASSE.bindPopup("<h4>Village KASSE</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    KASSE.bindPopup(detailVillage("Village KASSE", "Nom du chef", "6"));
 
 let LEKWA = L.marker([5.244976, 10.443117], {title: "Village LEKWA"}).addTo(myMap);
-    LEKWA.bindPopup("<h4>Village LEKWA</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    LEKWA.bindPopup(detailVillage("Village LEKWA", "Nom du chef", "7"));
 
 let MBE = L.marker([5.239960, 10.451583], {title: "Village MBE"}).addTo(myMap);
-    MBE.bindPopup("<h4>Village MBE</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    MBE.bindPopup(detailVillage("Village MBE", "Nom du chef", "8"));
 
 let NGUIHOP = L.marker([5.246542, 10.464887], {title: "Village NGUIHOP"}).addTo(myMap);
-    NGUIHOP.bindPopup("<h4>Village NGUIHOP</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    NGUIHOP.bindPopup(detailVillage("Village NGUIHOP", "Nom du chef", "9"));
 
 let NGUIGANG = L.marker([5.240815, 10.475701], {title: "Village NGUIGANG"}).addTo(myMap);
-    NGUIGANG.bindPopup("<h4>Village NGUIGANG</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    NGUIGANG.bindPopup(detailVillage("Village NGUIGANG", "Nom du chef", "10"));
 
 let TOULA = L.marker([5.257054, 10.480164], {title: "Village TOULA"}).addTo(myMap);
-    TOULA.bindPopup("<h4>Village TOULA</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    TOULA.bindPopup(detailVillage("Village TOULA", "Nom du chef", "11"));
 
 let TOUNANG = L.marker([5.272866, 10.488662], {title: "Village TOUNANG"}).addTo(myMap);
-    TOUNANG.bindPopup("<h4>Village TOUNANG</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    TOUNANG.bindPopup(detailVillage("Village TOUNANG", "Nom du chef", "12"));
 
 let TSEP = L.marker([5.260559, 10.490550], {title: "Village TSEP"}).addTo(myMap);
-    TSEP.bindPopup("<h4>Village TSEP</h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    TSEP.bindPopup(detailVillage("Village TSEP", "Nom du chef", "13"));
 
 let TSUEGUI1  = L.marker([5.255431, 10.495871], {title: "Village TSUEGUI I"}).addTo(myMap);
-    TSUEGUI1 .bindPopup("<h4>Village TSUEGUI I </h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    TSUEGUI1 .bindPopup(detailVillage("Village TSUEGUI I", "Nom du chef", "14"));
 
 let TSUEGUI2  = L.marker([5.250302, 10.505227], {title: "Village TSUEGUI II"}).addTo(myMap);
-    TSUEGUI2 .bindPopup("<h4>Village TSUEGUI II </h4>\
-                    <ul>\
-                        <li>Chef du village: NOM-DU-CHEF</li>\
-                        <li><a href='#'>Plan du quartier</a></li>\
-                    </ul>");
+    TSUEGUI2 .bindPopup(detailVillage("Village TSUEGUI II", "Nom du chef", "15"));
 
 
 let diablo = L.polygon([
@@ -134,3 +85,4 @@ let diablo = L.polygon([
         fillOpacity: "0",
     }
 ).addTo(myMap);
+
